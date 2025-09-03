@@ -1,15 +1,10 @@
-import NavBar from "./nav.tsx";
-import hero from "../assets/desktop/image-hero.jpg";
+import {LogoNavBarTop} from "./logoNavBar";
 
 const Header = () => {
   return (
     <>
       <header>
-        <div id="logo-navBar">
-          <img src="/src/assets/logo.svg" alt="logo" />
-          <NavBar />
-        </div>
-
+        <LogoNavBarTop />
         <div id="header-description">
           Immersive <br />
           Experiences <br />

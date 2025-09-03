@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
 :root {
   /*colors*/
   --nav-MainText-Color: hsl(0, 0%, 100%);
@@ -21,18 +23,19 @@
 }
 
 html,
-body,#root {
+body,
+#root {
   width: 100%;
   margin: 0;
   padding: 0;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 header {
   width: 100%;
   display: flex;
-  padding: 30px;
+  padding: 50px;
+  font-family: "Atalanta", serif;
   flex-direction: column;
   background-image: url("assets/desktop/image-hero.jpg");
   background-repeat: no-repeat;
@@ -42,52 +45,208 @@ header {
   font-size: var(--normal-text-font);
 }
 
-#logo-navBar{
+#logo-navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-#header-description{
-  width: 50%;
-  padding: 15px;
+#header-description {
+  width: 40%;
+  padding: 2vw;
   font-size: 5.5rem;
+  font-weight: 100;
+  font-style: normal;
   display: flex;
   align-items: center;
+  font-family: "Josefin Sans";
+  font-weight: var(--josefin-weight);
+  font-size: 5.5rem;
+  color: var(--nav-MainText-Color);
   border: 2px solid var(--nav-MainText-Color);
 }
 
-#imagesSection{
+#imagesSection {
   display: flex;
-  height: 80vh;
+  height: 100%;
+  width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 60px;
 }
 
-#imageSection-description{
+#imageSection-description-container {
   display: flex;
-  height: 80%;
+  height: 100%;
+  width: 100%;
+  margin-top: 35vh;
+  margin-left: -8vw;
+  background-color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
-#creationTitle-button{
+#imageSection-title {
+  font-family: "Josefin Sans";
+  font-weight: normal;
+  width: 100%;
+  padding-left: 60px;
+  text-align: start;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+#imageSection-description {
+  font-family: "Josefin Sans";
+  font-weight: normal;
+  font-size: 1.5rem;
+  width: 100%;
+  color: var(--paragraph-text-color);
+  padding-left: 70px;
+  margin: 0;
+}
+
+#creationTitle-button {
   display: flex;
+  padding: 50px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-#creationTitle{
-  font-size: 1.5rem;
+#creationTitle {
+  font-size: 2rem;
+  font-family: "Josefin Sans";
+  font-weight: 400;
 }
 
-#creationItems{
+#seeAllButton {
+  width: 7vw;
+  font-size: 1rem;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  padding: 10px;
+  background-color: var(--nav-MainText-Color);
+  border: 2px solid var(--copy-right-color);
+}
+
+#creationItems {
   display: grid;
-  grid-template-columns: 1 1 1 1;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 50px;
 }
 
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  background-color: var(--menu-background-color);
+}
 
+.social-icon {
+  width: 3vw;
+  height: 3vw;
+}
+
+#footer-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#copyright {
+  color: var(--paragraph-text-color);
+}
+
+#subRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (width < 1300px) {
+  
+  #creationTitle-button {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #creationItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  header {
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
+  }
+
+  #header-description {
+    width: 100%;
+    font-size: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+  }
+
+  #imagesSection {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+
+  #vr-image {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #imageSection-description-container {
+    width: 100%;
+    padding: 0px;
+    align-items: start;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  #imageSection-description {
+    padding-left: 20px;
+  }
+
+  #imageSection-title {
+    font-size: 2rem;
+    width: 100%;
+    text-align: start;
+    padding: 20px;
+  }
+
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icon {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  #creationTitle {
+    font-size: 3rem;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+  }
+}
