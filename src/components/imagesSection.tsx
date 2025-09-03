@@ -1,9 +1,9 @@
 const ImageSection = () => {
   return (
     <>
-      <div>
+      <div id="imagesSection">
         <img src="/src/assets/mobile/image-interactive.jpg" alt="interactive" />
-        <div>
+        <div id="imageSection-description">
           <p>The Leader In Interactive VR</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quasi.

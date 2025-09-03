@@ -1,34 +1,45 @@
 const Creations = () => {
   const createCreations = () => {
-    let creations = [];
+    let creationElements = [];
+    let creations = [
+      { image: "../assets/desktop/image-deep-earth.jpg", title: "Deep Earth" },
+      { image: "../assets/desktop/image-deep-earth.jpg", title: "Deep Earth" },
+      { image: "../assets/desktop/image-deep-earth.jpg", title: "Deep Earth" },
+      { image: "../assets/desktop/image-deep-earth.jpg", title: "Deep Earth" },
+      { image: "../assets/desktop/image-deep-earth.jpg", title: "Deep Earth" },
+      { image: "../assets/desktop/image-deep-earth.jpg", title: "Deep Earth" },
+      { image: "../assets/desktop/image-deep-earth.jpg", title: "Deep Earth" },
+      { image: "../assets/desktop/image-deep-earth.jpg", title: "Deep Earth" },
+    ];
     let count: number = 0;
 
-    while (count <= 8) {
-      creations.push(createCreation("", `${count}`));
+    while (count <= creations.length - 1) {
+      creationElements.push(
+        createCreation(creations[count].image, creations[count].title)
+      );
       count++;
     }
 
-    return creations; 
+    return creationElements;
   };
 
   return (
     <>
-      <div>
-        <p>Our Creations</p>
+      <div id="creationTitle-button">
+        <p id="creationTitle">Our Creations</p>
         <button>See All</button>
       </div>
-      <div>{createCreations()}</div>
+      <div id="creationItems">{createCreations()}</div>
     </>
   );
 };
 
 const createCreation = (image: string, title: string = "title") => {
   return (
-    <div key={title}>
+    <div style={{ backgroundImage: `url(${image})` }} key={title}>
       <p>{title}</p>
     </div>
   );
 };
-
 
 export default Creations;
