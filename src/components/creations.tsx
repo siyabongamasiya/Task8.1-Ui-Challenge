@@ -60,18 +60,31 @@ const createCreation = (image: string, title: string = "title") => {
         flexDirection: "column",
         justifyContent: "end",
         alignItems: `${width < 1300 ? "start" : "center"}`,
-        color: "hsl(0, 0%, 80%)",
+        color: "#FFFFFF",
         fontSize: "2rem",
         fontFamily: "Josefin Sans  ",
-      }}  
+        position: "relative",
+      }}
       key={title}
     >
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          zIndex: 0,
+          background:
+            "linear-gradient(to right, rgba(20, 20, 20, 0.4), rgba(199, 199, 194, 0))",
+        }}
+      ></div>
       <p
         style={{
+          fontSize:"clamp(3rem,1rem,7rem)",
           whiteSpace: "pre-wrap",
-          width:"100%",
-          background:
-            "linear-gradient(to right, rgba(150, 147, 147, 0.03), rgba(199, 199, 194, 0))",
+          zIndex: 1000,
+          textAlign:`${width < 1300 ? "start" : "center"}`,
+          padding: "7%",
+          width: "100%",
         }}
       >
         {title}
