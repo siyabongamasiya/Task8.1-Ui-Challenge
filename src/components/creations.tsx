@@ -66,9 +66,19 @@ const createCreation = (image: string, title: string = "title") => {
       }}
       key={title}
     >
-      <p style={{ whiteSpace: "pre-wrap" }}>{title}</p>
+      <p
+        style={{
+          whiteSpace: "pre-wrap",
+          width:"100%",
+          background:
+            "linear-gradient(to right, rgba(150, 147, 147, 0.03), rgba(199, 199, 194, 0))",
+        }}
+      >
+        {title}
+      </p>
     </div>
   );
 };
 
+//background: ;
 export default Creations;
