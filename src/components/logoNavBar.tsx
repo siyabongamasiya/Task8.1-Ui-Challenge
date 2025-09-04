@@ -18,7 +18,7 @@ const LogoNavBarTop = () => {
       }}
     >
       <img src="/src/assets/logo.svg" alt="logo" />
-      <FaBars style={{ width: "5vw", height: "5vw" }} />
+      <FaBars  style={{ width: "5vw", height: "5vw" }} />
     </div>
   ) : (
     <div

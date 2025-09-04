@@ -47,7 +47,7 @@ const Creations = () => {
 
 const createCreation = (image: string, title: string = "title") => {
   const width = useViewportWidth();
-  const height = width > 1300 ? "75vh" : "25vh";
+  const height = width > 1300 ? "75vh" : "45vh";
   return (
     <div
       style={{
@@ -63,7 +63,7 @@ const createCreation = (image: string, title: string = "title") => {
         color: "hsl(0, 0%, 80%)",
         fontSize: "2rem",
         fontFamily: "Josefin Sans  ",
-      }}
+      }}  
       key={title}
     >
       <p

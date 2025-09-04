@@ -62,9 +62,8 @@ header {
   align-items: center;
   font-family: "Josefin Sans";
   font-weight: var(--josefin-weight);
-  font-size: 5.5rem;
   color: var(--nav-MainText-Color);
-  border: 2px solid var(--nav-MainText-Color);
+  border: 2px solid var(--item-text-color);
 }
 
 #imagesSection {
