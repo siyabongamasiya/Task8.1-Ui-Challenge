@@ -67,7 +67,7 @@ const createCreation = (image: string, title: string = "title") => {
       }}
       key={title}
     >
-      <div
+      <div  
         style={{
           width: "100%",
           height: "100%",

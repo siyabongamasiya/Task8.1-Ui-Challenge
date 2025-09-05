@@ -173,7 +173,6 @@ header {
 }
 
 @media screen and (width < 1300px) {
-  
   #creationTitle-button {
     justify-content: center;
     align-items: center;
