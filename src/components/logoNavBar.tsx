@@ -1,6 +1,7 @@
 import { FaBars } from "react-icons/fa";
 import NavBar from "./nav.tsx";
 import useViewportWidth from "../customHooks/customHooks.ts";
+import logo from "../assets/logo.svg"
 
 const LogoNavBarTop = () => {
   const width = useViewportWidth();
@@ -17,7 +18,7 @@ const LogoNavBarTop = () => {
         alignItems: "center",
       }}
     >
-      <img src="/src/assets/logo.svg" alt="logo" />
+      <img src={logo} alt="logo" />
       <FaBars style={{ width: "5vw", height: "5vw" }} />
     </div>
   ) : (
@@ -31,7 +32,7 @@ const LogoNavBarTop = () => {
         alignItems: "start",
       }}
     >
-      <img src="/src/assets/logo.svg" alt="logo" />
+      <img src={logo} alt="logo" />
       <NavBar />
     </div>
   );
@@ -48,7 +49,7 @@ const LogoNavBarBottom = () => {
         alignItems: "center",
       }}
     >
-      <img src="/src/assets/logo.svg" alt="logo" />
+      <img src={logo} alt="logo" />
       <NavBar />
     </div>
   );
