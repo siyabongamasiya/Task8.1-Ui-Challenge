@@ -1,10 +1,12 @@
+import vrImage from "../assets/desktop/image-interactive.jpg"
+
 const ImageSection = () => {
   return (
     <>
       <div id="imagesSection">
         <img
           id="vr-image"
-          src="/src/assets/mobile/image-interactive.jpg"
+          src={vrImage}
           alt="interactive"
         />
         <div id="imageSection-description-container">
