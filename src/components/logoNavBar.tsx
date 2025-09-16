@@ -1,9 +1,6 @@
 import { FaBars } from "react-icons/fa";
 import NavBar from "./nav.tsx";
-import useViewportWidth from "../customHooks/customHooks.tsx";
-interface Args {
-  name: string;
-}
+import useViewportWidth from "../customHooks/customHooks.ts";
 
 const LogoNavBarTop = () => {
   const width = useViewportWidth();
