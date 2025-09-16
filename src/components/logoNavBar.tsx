@@ -1,6 +1,9 @@
 import { FaBars } from "react-icons/fa";
 import NavBar from "./nav.tsx";
-import useViewportWidth from "./customHooks.tsx";
+import useViewportWidth from "../customHooks/customHooks.tsx";
+interface Args {
+  name: string;
+}
 
 const LogoNavBarTop = () => {
   const width = useViewportWidth();
@@ -13,12 +16,12 @@ const LogoNavBarTop = () => {
         display: "flex",
         flexDirection: "row",
         gap: "10px",
-        justifyContent:"space-between",
+        justifyContent: "space-between",
         alignItems: "center",
       }}
     >
       <img src="/src/assets/logo.svg" alt="logo" />
-      <FaBars  style={{ width: "5vw", height: "5vw" }} />
+      <FaBars style={{ width: "5vw", height: "5vw" }} />
     </div>
   ) : (
     <div
@@ -37,7 +40,6 @@ const LogoNavBarTop = () => {
   );
 };
 const LogoNavBarBottom = () => {
-
   return (
     <div
       id="logo-navBar"
@@ -45,7 +47,7 @@ const LogoNavBarBottom = () => {
         display: "flex",
         flexDirection: "column",
         gap: "10px",
-        justifyContent:"center",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >
@@ -55,4 +57,4 @@ const LogoNavBarBottom = () => {
   );
 };
 
-export {LogoNavBarTop,LogoNavBarBottom};
+export { LogoNavBarTop, LogoNavBarBottom };

@@ -1,9 +1,8 @@
-import useViewportWidth from "./customHooks";
+import useViewportWidth from "../customHooks/customHooks";
 
-
-const NavBar= () => {
-  const width = useViewportWidth()
-  const dir = width < 1300 ? "column" : "row"
+const NavBar = () => {
+  const width = useViewportWidth();
+  const dir = width < 1300 ? "column" : "row";
   return (
     <>
       <div
@@ -11,7 +10,7 @@ const NavBar= () => {
           display: "flex",
           flexDirection: dir,
           color: "hsl(0, 0%, 100%)",
-          fontFamily:"Atala,sans-serif",
+          fontFamily: "Atala,sans-serif",
           gap: "10px",
         }}
       >

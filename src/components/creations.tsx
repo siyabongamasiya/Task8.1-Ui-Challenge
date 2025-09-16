@@ -6,7 +6,7 @@ import above from "../assets/desktop/image-from-above.jpg";
 import pocketBorealis from "../assets/desktop/image-pocket-borealis.jpg";
 import curiosity from "../assets/desktop/image-curiosity.jpg";
 import fisheye from "../assets/desktop/image-fisheye.jpg";
-import useViewportWidth from "./customHooks";
+import useViewportWidth from "../customHooks/customHooks";
 
 const Creations = () => {
   const width = useViewportWidth();
@@ -67,7 +67,7 @@ const createCreation = (image: string, title: string = "title") => {
       }}
       key={title}
     >
-      <div  
+      <div
         style={{
           width: "100%",
           height: "100%",
@@ -79,10 +79,10 @@ const createCreation = (image: string, title: string = "title") => {
       ></div>
       <p
         style={{
-          fontSize:"clamp(3rem,1rem,7rem)",
+          fontSize: "clamp(3rem,1rem,7rem)",
           whiteSpace: "pre-wrap",
           zIndex: 1000,
-          textAlign:`${width < 1300 ? "start" : "center"}`,
+          textAlign: `${width < 1300 ? "start" : "center"}`,
           padding: "7%",
           width: "100%",
         }}
